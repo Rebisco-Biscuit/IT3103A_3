@@ -13,7 +13,10 @@
     "@prisma/client": "^6.5.0",
     "apollo-server": "^3.13.0",
     "graphql": "^16.10.0",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-ws": "^6.0.4",
     "prisma": "^6.5.0",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "subscriptions-transport-ws": "^0.11.0"
   }
 }

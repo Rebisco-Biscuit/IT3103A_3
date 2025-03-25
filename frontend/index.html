@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts Table</title>
-    <script defer src="app.js"></script>
+    <script src="https://unpkg.com/graphql-ws/umd/graphql-ws.js"></script>
+    <script src="app.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .mydiv {
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+        input {
+            font-size: medium;
+        }
+        button {
+            font-size: medium;
+            margin-left: 20px;
+            background-color: #ffffff00;
+        }
+    </style>
 </head>
-<body>
+<body style="font-family: 'Helvetica'; letter-spacing: 1px;">
     <h1>Posts</h1>
 
     <!-- Form to Add a New Post -->
-    <input type="text" id="post-title" placeholder="Enter post title">
-    <input type="text" id="post-content" placeholder="Enter post content">
-    <button id="add-post-btn">Add Post</button>
+    <div class="mydiv">
+        <input type="text" id="post-title" placeholder="Enter post title" required>
+        <input type="text" id="post-content" placeholder="Enter post content" required>
+        <button id="add-post-btn">Add Post</button><br/>
+        <label id="somelabel">.</label>
+    </div>        
 
     <!-- Posts Table -->
-    <table border="1">
+    <table>
         <thead>
             <tr>
                 <th>ID</th>
